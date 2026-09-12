@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O/L ICT with Sandaru | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Syllabus Dropdown Styling */
+        .syllabus-dropdown {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            padding: 1rem 1.25rem;
+            margin-top: 1rem;
+            text-align: left;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .syllabus-dropdown summary {
+            font-weight: 600;
+            color: var(--primary);
+            font-size: 1.05rem;
+            outline: none;
+            list-style: none; /* Hides default arrow in some browsers */
+        }
+        .syllabus-dropdown summary::-webkit-details-marker {
+            display: none; /* Hides default arrow in Chrome/Safari */
+        }
+        .syllabus-dropdown summary::after {
+            content: ' ▼';
+            font-size: 0.8rem;
+            float: right;
+            transition: transform 0.3s;
+        }
+        .syllabus-dropdown[open] summary::after {
+            transform: rotate(180deg);
+        }
+        .syllabus-content {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e2e8f0;
+        }
+        .syllabus-content h4 {
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+        .syllabus-content ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--gray);
+            font-size: 0.95rem;
+        }
+        .syllabus-content ul li {
+            margin-bottom: 0.3rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="Logo">
+            <div class="logo-text">
+                <span style="color: #38bdf8;">O/L ICT</span> 
+                <span style="color: #cbd5e1; font-weight: normal; font-size: 1rem;">with</span> 
+                <span style="color: #fbbf24;">Sandaru</span>
+            </div>
+        </a>
+        <nav>
+            <a href="index.html" class="active">මුල් පිටුව</a>
+            <a href="classes.html">පන්ති</a>
+            <a href="about.html">ගුරුතුමා ගැන</a>
+            <a href="register.html">ලියාපදිංචි වන්න</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>විභාගයට විශ්වාසයෙන් මුහුණ දෙන්න ! <br> O/L ICT නිසැක  <span style="color: #38bdf8;">A</span> සාමාර්ථයක් සඳහා !</h1>
+        <p><b>විෂය නිර්දේශය සම්පූර්ණයෙන්ම ආවරණය වන පරිදි සකස් කළ සරල සහ පැහැදිලි සිද්ධාන්ත සහ පුනරීක්ෂණ පන්ති.</p>
+        <a href="register.html" class="btn">දැන්ම සම්බන්ධ වන්න</a>
+    </section>
+
+    <div class="container">
+        <h2 class="section-title">ඇයි අපේ පන්ති තෝරා ගන්නේ?</h2>
+        <div class="classes-grid">
+            
+            <!-- Card 1 with Interactive Syllabus Dropdown -->
+            <div class="card-box" style="text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
+                <div>
+                    <h3>සම්පූර්ණ විෂය නිර්දේශය</h3>
+                    <p style="color: var(--gray); margin-top: 1rem;">10 සහ 11 ශ්‍රේණි සඳහා රජයේ විෂය නිර්දේශය 100% ක් ආවරණය කිරීම.</p>
+                    
+                    <!-- Replace the syllabus details box in index.html with this -->
+                  <div style="margin-top: 1.5rem;">
+                    <a href="syllabus.html" class="btn" style="background: var(--dark); font-size: 0.95rem; padding: 0.6rem 1.5rem;">
+                     විෂය නිර්දේශය බලන්න (View Syllabus)
+                    </a>
+                  </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card-box" style="text-align: center;">
+                <h3>ප්‍රායෝගික මඟපෙන්වීම</h3>
+                <p style="color: var(--gray); margin-top: 1rem;">HTML, දත්ත සමුදායන් සහ මූලික වැඩසටහන්කරණය ඉතා සරලව ඉගෙනීම.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card-box" style="text-align: center;">
+                <h3>විභාග ඉලක්කගත පුහුණුව</h3>
+                <p style="color: var(--gray); margin-top: 1rem;">පසුගිය විභාග ප්‍රශ්න පත්‍ර සහ ආදර්ශ ප්‍රශ්න පත්‍ර සාකච්ඡා කිරීම.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 O/L ICT with Sandaru. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

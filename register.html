@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O/L ICT with Sandaru | Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="Logo">
+            <div class="logo-text">
+                <span style="color: #38bdf8;">O/L ICT</span> 
+                <span style="color: #cbd5e1; font-weight: normal; font-size: 1rem;">with</span> 
+                <span style="color: #fbbf24;">Sandaru</span>
+            </div>
+        </a>
+        <nav>
+            <a href="index.html">මුල් පිටුව</a>
+            <a href="classes.html">පන්ති</a>
+            <a href="about.html">ගුරුතුමා ගැන</a>
+            <a href="register.html" class="active">ලියාපදිංචි වන්න</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="register-box">
+            <h2 class="section-title" style="margin-bottom: 1.5rem;">පන්ති සඳහා ලියාපදිංචි වීම</h2>
+            <p style="text-align: center; color: var(--gray); margin-bottom: 2rem;">
+                පහත පෝරමය පුරවා ලියාපදිංචි වන්න.
+            </p>
+            
+            <form action="https://formspree.io/f/mrpgvpad" method="POST">
+                <div class="form-group">
+                    <label>සම්පූර්ණ නම (Full Name)</label>
+                    <input type="text" name="fullname" placeholder="e.g: Nimesh Perera" required>
+                </div>
+                <div class="form-group">
+                    <label>WhatsApp අංකය (WhatsApp Number)</label>
+                    <input type="text" name="whatsapp" placeholder="e.g: 071XXXXXXX" required>
+                </div>
+                <div class="form-group">
+                    <label>පන්තිය තෝරන්න (Select Class)</label>
+                    <select name="package">
+                        <option value="Grade 11 Theory">Grade 11 Theory (රු. 1,000)</option>
+                        <option value="Grade 10 Theory">Grade 10 Theory (රු. 1,000)</option>
+                        <option value="Grades 6-9 Theory">Grades 6-9 Theory (රු. 500)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>දිස්ත්‍රික්කය (District)</label>
+                    <input type="text" name="district" placeholder="e.g: Kurunegala" required>
+                </div>
+                <div class="form-group">
+                    <label>පාසල (School)</label>
+                    <input type="text" name="school">
+                </div>
+                <button type="submit" class="btn" style="width: 100%; border: none; cursor: pointer;">ලියාපදිංචි වීම තහවුරු කරන්න</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 O/L ICT with Sandaru. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
